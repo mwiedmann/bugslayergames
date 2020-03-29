@@ -1,5 +1,5 @@
-const gameLink = (name: string) => `/games/${name}`
+const gameLink = (name: string): string => `/games/${name}`
 
-const imageLink = (name: string) => `/images/${name}`
+const imageLink = (name: string): string => `/images/${name}`
 
 export { gameLink, imageLink }

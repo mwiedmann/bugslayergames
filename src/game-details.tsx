@@ -7,12 +7,10 @@ interface IComponentRouteParams {
   name: string
 }
 
-interface IComponentOwnProps {} // extends RouteComponentProps<IComponentRouteParams> {}
-
-export const GameDetails = () => {
+export const GameDetails: React.FC = () => {
   const { name } = useParams<IComponentRouteParams>()
 
-  const gameData = gameList.find(g => g.link === name)
+  const gameData = gameList.find((g) => g.link === name)
 
   return gameData ? <GameCard gameData={gameData} /> : <div>Not found</div>
 }

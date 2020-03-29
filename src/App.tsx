@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import { Home } from './home'
 import { GameDetails } from './game-details'
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <Container>
