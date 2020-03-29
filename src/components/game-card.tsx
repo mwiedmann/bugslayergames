@@ -1,6 +1,8 @@
 import * as React from 'react'
-import { Col, Image, Card } from 'react-bootstrap'
+import { Col, Card } from 'react-bootstrap'
 import { IGameData } from '../types/game-data'
+import { Link } from 'react-router-dom'
+import { gameLink, imageLink } from '../helpers/links'
 
 interface IComponentProps {
   gameData: IGameData
@@ -8,9 +10,11 @@ interface IComponentProps {
 
 export const GameCard: React.FC<IComponentProps> = props => (
   <Col sm={4}>
-    <Card className='text-center'>
-      <Card.Title>{props.gameData.title}</Card.Title>
-      <Card.Img variant='bottom' src={props.gameData.imageSrc} />
-    </Card>
+    <Link to={gameLink(props.gameData.link)}>
+      <Card className='text-center'>
+        <Card.Title>{props.gameData.title}</Card.Title>
+        <Card.Img variant='bottom' src={imageLink(props.gameData.image)} />
+      </Card>
+    </Link>
   </Col>
 )

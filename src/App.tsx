@@ -1,13 +1,23 @@
 import * as React from 'react'
-import { Container, Row } from 'react-bootstrap'
-import { GameList } from './components/game-list'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+import { Home } from './home'
+import { GameDetails } from './game-details'
 
 const App = () => {
-  const [count, setCount] = React.useState(0)
   return (
-    <Container>
-      <GameList />
-    </Container>
+    <Router>
+      <Container>
+        <Switch>
+          <Route path='/games/:name'>
+            <GameDetails />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </Container>
+    </Router>
   )
 }
 

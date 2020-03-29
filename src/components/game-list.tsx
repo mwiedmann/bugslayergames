@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Row } from 'react-bootstrap'
-import { IGameData } from '../types/game-data'
 import { GameCard } from './game-card'
 import { gameList } from '../data/games'
 

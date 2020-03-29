@@ -1,5 +1,5 @@
 export interface IGameData {
-  imageSrc: string
+  image: string
   title: string
   description: string
   link: string
