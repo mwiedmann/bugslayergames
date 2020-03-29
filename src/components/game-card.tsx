@@ -8,15 +8,19 @@ interface ComponentProps {
   gameData: IGameData
 }
 
-const GameCard: React.FC<ComponentProps> = (props) => (
-  <Col sm={4}>
-    <Link to={gameLink(props?.gameData?.link)}>
-      <Card className='text-center'>
-        <Card.Title>{props?.gameData?.title}</Card.Title>
-        <Card.Img variant='bottom' src={imageLink(props?.gameData?.image)} />
-      </Card>
-    </Link>
-  </Col>
-)
+const GameCard: React.FC<ComponentProps> = (props) => {
+  const { gameData } = props
+
+  return (
+    <Col sm={4}>
+      <Link to={gameLink(gameData.link)}>
+        <Card className='text-center'>
+          <Card.Title>{gameData.title}</Card.Title>
+          <Card.Img variant='bottom' src={imageLink(gameData.image)} />
+        </Card>
+      </Link>
+    </Col>
+  )
+}
 
 export { GameCard }
