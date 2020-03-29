@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
@@ -6,7 +7,8 @@ const config = {
   entry: './src/index.tsx',
   output: {
     filename: `[name].[hash].min.js`,
-    chunkFilename: `[name].[chunkhash].min.js`
+    chunkFilename: `[name].[chunkhash].min.js`,
+    publicPath: '/'
   },
   module: {
     rules: [
