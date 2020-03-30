@@ -4,7 +4,8 @@ import { gameList } from './data/games'
 import { NotFound } from './components/not-found'
 import { IGameData } from './types/game-data'
 import { Jumbotron, Image } from 'react-bootstrap'
-import { imageLink } from './helpers/links'
+import { imageLink, playLink } from './helpers/links'
+import { findImageType } from './helpers/images'
 
 interface IComponentRouteParams {
   name: string
@@ -19,9 +20,11 @@ const GameDetailsComponent: React.FC<IGameDetailsProps> = (props) => {
 
   return (
     <Jumbotron fluid style={{ textAlign: 'center' }}>
-      <h1>{gameData.title}</h1>
-      <p>{gameData.description}</p>
-      <Image src={imageLink(gameData.image)} fluid />
+      <a href={playLink(gameData.playLink)}>
+        <h1>{gameData.title}</h1>
+        <p>{gameData.description}</p>
+        <Image src={imageLink(findImageType(gameData.images, 'main'))} fluid />
+      </a>
     </Jumbotron>
   )
 }
@@ -29,7 +32,7 @@ const GameDetailsComponent: React.FC<IGameDetailsProps> = (props) => {
 export const GameDetails: React.FC = () => {
   const { name } = useParams<IComponentRouteParams>()
 
-  const gameData = gameList.find((g) => g.link === name)
+  const gameData = gameList.find((g) => g.name === name)
 
   return gameData ? <GameDetailsComponent gameData={gameData} /> : <NotFound />
 }

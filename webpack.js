@@ -25,7 +25,11 @@ const config = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin([{ from: 'src/images', to: 'images' }]),
+    new CopyPlugin([
+      { from: 'src/images', to: 'images' },
+      { from: 'runtimes', to: 'runtimes' },
+      { from: 'site-config' }
+    ]),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
       minify: false
