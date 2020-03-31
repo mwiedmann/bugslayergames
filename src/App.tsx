@@ -1,22 +1,19 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
-import { Home } from './home'
-import { GameDetails } from './game-details'
+import { Home } from './routes/home'
+import { GameDetails } from './routes/game-details'
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Container>
-        <Switch>
-          <Route path='/games/:name'>
-            <GameDetails />
-          </Route>
-          <Route path='/'>
-            <Home />
-          </Route>
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path='/games/:name'>
+          <GameDetails />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   )
 }

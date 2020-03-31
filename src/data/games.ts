@@ -9,6 +9,14 @@ export const gameList: IGameData[] = [
     playLink: { link: 'https://store.steampowered.com/app/805350/Sphera_Turris/', type: 'external' }
   },
   {
+    images: [{ link: 'portfolio/SpaceHarvest.jpg', type: 'main' }],
+    title: 'Space Harvest',
+    description: `Up to 4 players battle to collect minerals and protect their bases in this Asteroids type game.`,
+    name: 'SpaceHarvest',
+    playLink: { link: 'SpaceHarvest', type: 'local' },
+    github: 'https://github.com/mwiedmann/space-harvest'
+  },
+  {
     images: [{ link: 'portfolio/Waterfall.png', type: 'main' }],
     title: 'Waterfall',
     description: `This is more of a simulation rather than a game, but it's very satifying to watch the "water" crash into the statue and wash away.`,

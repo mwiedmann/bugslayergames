@@ -13,7 +13,7 @@ const GameCard: React.FC<ComponentProps> = (props) => {
   const { gameData } = props
 
   return (
-    <Col sm={4}>
+    <Col sm={4} className='game-card'>
       <Link to={gameLink(gameData.name)}>
         <Card className='text-center'>
           <Card.Title>{gameData.title}</Card.Title>

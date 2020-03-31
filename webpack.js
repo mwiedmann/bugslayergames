@@ -28,6 +28,7 @@ const config = {
     new CopyPlugin([
       { from: 'src/images', to: 'images' },
       { from: 'runtimes', to: 'runtimes' },
+      { from: 'src/css', to: 'css' },
       { from: 'site-config' }
     ]),
     new HtmlWebpackPlugin({

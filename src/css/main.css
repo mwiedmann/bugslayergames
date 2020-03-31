@@ -1,0 +1,35 @@
+body {
+  font-family: Montserrat;
+  color: rgb(44, 62, 80);
+  font-weight: 700;
+}
+
+a, a:active, a:visited {
+  color: rgb(44, 62, 80);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.h2, .h3, .h4, .h5, .h5 {
+  font-weight: 700;
+}
+
+.section-a {
+  color: white;
+  background-color: rgb(24, 188, 156);
+  padding: 1em;
+}
+
+.section-b {
+  background-color: white;
+  padding: 1em;
+}
+
+.game-card {
+  padding: 1em;
+  
+}

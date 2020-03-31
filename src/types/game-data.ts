@@ -13,4 +13,5 @@ export interface IGameData {
   description: string
   name: string
   playLink: ILinkData
+  github?: string
 }
