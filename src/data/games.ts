@@ -5,6 +5,7 @@ export const gameList: IGameData[] = [
     images: [{ link: 'portfolio/SpheraTurris.png', type: 'main' }],
     title: 'Sphera Turris',
     description: `Sphera Turris is a rotating platformer where you guide a ball past an array of increasingly difficult obstacles to the top of a tower. Precision controls, environmental physics, and challenging levels will have you trying over-and-over to shave a few tenths of a second off your best times. The custom music I created goes great with the colorful, futuristic graphics. Download it now and start comparing speed run times and tips with your friends.`,
+    shortDescription: 'Released on Steam!',
     name: 'SpheraTurris',
     playLink: { link: 'https://store.steampowered.com/app/805350/Sphera_Turris/', type: 'external' }
   },

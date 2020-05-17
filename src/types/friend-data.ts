@@ -1,12 +1,11 @@
 import { IImageData } from './image'
 import { ILinkData } from './links'
 
-export interface IGameData {
+export interface IFriendData {
   images: IImageData[]
   title: string
   description: string
   shortDescription?: string
   name: string
-  playLink: ILinkData
-  github?: string
+  siteLink: ILinkData
 }

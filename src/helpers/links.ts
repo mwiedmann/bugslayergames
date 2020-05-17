@@ -1,10 +1,15 @@
 import { IImageData } from '../types/image'
-import { ILinkData } from '../types/game-data'
+import { ILinkData } from '../types/links'
+
+const siteLink = (link: ILinkData, folder: string): string =>
+  link.type === 'external' ? link.link : `/${folder}/${link.link}`
 
 const gameLink = (name: string): string => `/games/${name}`
 
 const imageLink = (image?: IImageData): string | undefined => (image ? `/images/${image.link}` : undefined)
 
-const playLink = (link: ILinkData): string => (link.type === 'external' ? link.link : `/runtimes/${link.link}`)
+const playLink = (link: ILinkData): string => siteLink(link, 'runtimes')
 
-export { gameLink, imageLink, playLink }
+const friendViewLink = (name: string): string => `/friends/${name}`
+
+export { gameLink, imageLink, playLink, friendViewLink }
