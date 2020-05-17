@@ -19,7 +19,7 @@ const GameDetailsComponent: React.FC<IGameDetailsProps> = (props) => {
   const { gameData } = props
 
   return (
-    <Jumbotron fluid style={{ textAlign: 'center' }}>
+    <Jumbotron style={{ textAlign: 'center' }}>
       <>
         <Row>
           <Col>
@@ -27,9 +27,11 @@ const GameDetailsComponent: React.FC<IGameDetailsProps> = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col xl={3} lg={2} md={1} sm={1} />
+          <Col xl={6} lg={8} md={10} sm={10}>
             <p>{gameData.description}</p>
           </Col>
+          <Col xl={3} lg={2} md={1} sm={1} />
         </Row>
         <Row>
           <Col>

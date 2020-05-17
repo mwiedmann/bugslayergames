@@ -31,5 +31,13 @@ h1 {
 
 .game-card {
   padding: 1em;
-  
+}
+
+a.btn-primary {
+  color: rgb(142, 205, 235)
+}
+
+/* Bootstrap overrides */
+.jumbotron {
+  margin-bottom: 0px;
 }

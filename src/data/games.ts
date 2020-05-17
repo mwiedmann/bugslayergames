@@ -17,6 +17,14 @@ export const gameList: IGameData[] = [
     github: 'https://github.com/mwiedmann/space-harvest'
   },
   {
+    images: [{ link: 'portfolio/BattleBall.png', type: 'main' }],
+    title: 'Battle Ball',
+    description: `Hit the ice in this fast paced, heavy hitting hockey like game.`,
+    name: 'BattleBall',
+    playLink: { link: 'BattleBall', type: 'local' },
+    github: 'https://github.com/mwiedmann/battle-ball'
+  },
+  {
     images: [{ link: 'portfolio/Waterfall.png', type: 'main' }],
     title: 'Waterfall',
     description: `This is more of a simulation rather than a game, but it's very satifying to watch the "water" crash into the statue and wash away.`,
