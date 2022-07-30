@@ -13,8 +13,8 @@ export const About: React.FC = () => (
       <Col>
         <p className='lead'>
           Mark Wiedmann here. I&apos;m the Principal Software Developer at{' '}
-          <a style={{ color: 'blue' }} href='https://www.inmotionnow.com/'>
-            inMotionNow
+          <a style={{ color: 'blue' }} href='https://www.unqork.com/'>
+            Unqork
           </a>
           . As a hobby, I enjoy creating games using Unity, Phaser, and a variety of other frameworks and languages.
           I&apos;m always looking to collaborate with other developers, so reach out if you have anything interesting to
@@ -25,7 +25,7 @@ export const About: React.FC = () => (
     </Row>
     <Row>
       <Col>
-        <a href='https://www.linkedin.com/in/mark-wiedmann'>Linked In</a>
+        <a href='https://www.linkedin.com/in/mark-wiedmann'>LinkedIn</a>
         {' | '}
         <a href='https://github.com/mwiedmann'>Github</a>
         {' | '}

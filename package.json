@@ -2,7 +2,7 @@
   "name": "bugslayergames",
   "license": "MIT",
   "author": "Mark Wiedmann <mrwieds@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://www.bugslayergames.com",
   "main": "src/index.tsx",
   "dependencies": {

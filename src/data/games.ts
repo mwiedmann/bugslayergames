@@ -10,6 +10,14 @@ export const gameList: IGameData[] = [
     playLink: { link: 'https://store.steampowered.com/app/805350/Sphera_Turris/', type: 'external' }
   },
   {
+    images: [{ link: 'portfolio/Invaders.jpg', type: 'main' }],
+    title: 'Invaders',
+    description: `A Galaga like arcade game.`,
+    name: 'Invaders',
+    playLink: { link: 'Invaders', type: 'local' },
+    github: 'https://github.com/mwiedmann/invaders'
+  },
+  {
     images: [{ link: 'portfolio/SpaceHarvest.jpg', type: 'main' }],
     title: 'Space Harvest',
     description: `Up to 4 players battle to collect minerals and protect their bases in this Asteroids type game.`,
